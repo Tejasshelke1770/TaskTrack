@@ -2,7 +2,6 @@ import Login from "./Components/Auth/Login";
 import EmployeeDashboard from "./Components/Dashboard/EmployeeDashboard";
 import AdminDashboard from "./Components/Dashboard/AdminDashboard";
 import { useContext, useEffect, useState } from "react";
-import { setLocalStorage, getLocalStorage } from "./utils/LocalStorage";
 import { AuthContext } from "./context/AuthProvider";
 
 function App() {
@@ -50,8 +49,3 @@ function App() {
 }
 
 export default App;
-
-// useEffect(()=>{
-//   // setLocalStorage()
-//   getLocalStorage()
-//    })

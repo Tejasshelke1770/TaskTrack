@@ -27,7 +27,6 @@ const CreateTask = () => {
     });
 
     setUserData(data)
-    console.log(data)
 
     setTaskTitle("");
     setTaskDate("");
