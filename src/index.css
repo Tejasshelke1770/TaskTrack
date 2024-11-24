@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    color: #fff;
+}
+
+body{
+    background-color: #111;
+}
+
+
+/* #tasklist::-webkit-scrollbar {
+   width: 5px;
+   height: 5px;
+  }  */
+
+
+  ::-webkit-scrollbar {
+    width: 5px; /* Width of the scrollbar */
+    height: 5px; /* Height of the scrollbar for horizontal scrollbars */
+}
+
+/* Track (background) */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color of the track */
+    border-radius: 10px;
+}
+
+/* Handle (the draggable part) */
+::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the handle */
+    border-radius: 4px; /* Rounded corners for the handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color of the handle when hovered */
+}
