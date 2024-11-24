@@ -3,20 +3,20 @@ Developed a comprehensive task management application using React JS, enabling e
 
 ## Demo Login Credentials for Employees
 - **Username**: `employee1@example.com`
-- **Password**: `password123`
+- **Password**: `123`
 
 - **Username**: `employee2@example.com`
-- **Password**: `password123`
+- **Password**: `123`
 
 - **Username**: `employee3@example.com`
-- **Password**: `password123`
+- **Password**: `123`
 
 - **Username**: `employee4@example.com`
-- **Password**: `password123`
+- **Password**: `123`
 
 - **Username**: `employee5@example.com`
-- **Password**: `password123`
+- **Password**: `123`
 
 ## Demo Login Credentials for Admin
 - **Username**: `admin@example.com`
-- **Password**: `password123`
+- **Password**: `123`
