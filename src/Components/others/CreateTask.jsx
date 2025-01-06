@@ -8,25 +8,24 @@ const CreateTask = () => {
   const [taskCategory, settaskCategory] = useState("");
   const [taskDescription, settaskDescription] = useState("");
 
-  const [newTask, setNewTask] = useState({})
-
   const [userData,setUserData] = useContext(AuthContext)
 
   const submitHandler = (e) => {
     e.preventDefault();
 
-    setNewTask({taskTitle, taskDate, taskCategory,taskDescription, active:false,newTask :true,failed:false, completed:false})
+     let latestTask = {taskTitle, taskDate, taskCategory,taskDescription, active:false,newTask :true,failed:false, completed:false}
+    console.log(latestTask)
 
-    const data = userData
 
-    data.forEach(employee => {
-      if(employee.name.toLowerCase() == taskAssignedTo.toLowerCase()){
-        employee.tasks.push(newTask)
-        employee.taskCount.newTask += 1
+    let updatedData = userData.map((emp)=>{
+      if(emp.name.toLowerCase()== taskAssignedTo.toLowerCase()){
+        emp.tasks.push(latestTask);
+        emp.taskCount.newTask += 1;
       }
-    });
+      return emp;
+    })
 
-    setUserData(data)
+    setUserData(updatedData)
 
     setTaskTitle("");
     setTaskDate("");
